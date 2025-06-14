@@ -1,0 +1,18 @@
+data:
+  words_file: "words.json"
+  text_file: "text.json"
+  labels_file: "labels.npy"
+  sequence_length: 50
+
+model:
+  embedding_dim: 64
+
+training:
+  batch_size: 400
+  learning_rate: 0.05
+  epochs: 3
+  test_size: 0.2
+  random_state: 42
+
+paths:
+  model_save_path: "ticket_classifier_model.pth"
